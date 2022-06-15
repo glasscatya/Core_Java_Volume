@@ -18,8 +18,7 @@ public class EmployeeSortTest {
         String[] s = {"1293", "2pi12p", "213awwofidsaoiasdkh"};
         Arrays.sort(s, new LengthComparator());
 
-        for (String s1:
-             s) {
+        for (String s1: s) {
             System.out.println(s1);
         }
     }

@@ -40,4 +40,9 @@ public class Manager extends Employee{
     public String toString() {
         return super.toString() + "[bonus=" + bonus + "]";
     }
+
+    public double getSonus()
+    {
+        return bonus;
+    }
 }
