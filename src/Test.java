@@ -14,9 +14,11 @@ import java.util.logging.Logger;
 public class Test
 {
     public static void main(String[] args) throws IOException, InstantiationException, IllegalAccessException {
-        System.out.println("makePair(Employee.class).toString() = " + makePair(Employee.class).toString());
+//        System.out.println("makePair(Employee.class).toString() = " + makePair(Employee.class).toString());
 
-
+        Class clazz = String.class;
+//        String str = clazz.newInstance();
+        System.out.println("clazz = " + clazz);
     }
 
     public static <T> Pair<T> makePair(Class<T> c) throws
@@ -30,7 +32,6 @@ class DateInterval extends Pair<LocalDate> {
     public void setSecond(LocalDate second) {
         if(second.compareTo(getFirst()) >= 0)
             super.setSecond(second);
-
     }
 }
 
